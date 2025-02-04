@@ -7,6 +7,7 @@ main {
     width: 600px;
 }
 
+
 .item {
     background-color: #4CAF50;
     color: #fff;
@@ -14,10 +15,42 @@ main {
     margin: 5px;
     text-align: center;
     font-size: 1rem;
-    flex-basis: 250px; /* Tamanho incialde cada item */
+    flex-basis: 250px;
+    /* Tamanho incialde cada item */
 }
 
 /* valores distintos de flex-shrink */
-.item-1{flex-shrink: 1;}
-.item-2{flex-shrink: 0;}
-.item-3{flex-shrink: 2;}
+.item-1 {
+    flex-shrink: 1;
+}
+
+.item-2 {
+    flex-shrink: 0;
+}
+
+.item-3 {
+    flex-shrink: 2;
+}
+
+@media (max-width: 680px) {
+    main {
+        width: 400px
+    }
+
+    .item {
+        flex-basis: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 200px;
+        gap: 8px;
+    }
+
+    .item {
+        flex-basis: 50px;
+        padding: 5px;
+        margin: 0px;
+    }
+}
