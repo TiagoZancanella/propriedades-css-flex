@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #486254;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.botao-pesquisa {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.pesquisa-style {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.botao-pesquisa:hover {
+    cursor: pointer;
+    width: 78px;
+    height: 25px;
+    background-color: #d82e2e;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4ba2fe;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.user i:hover {
+    transform: scale(1.2);
+    color: #007BFF;
+}
+
+
+ul {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+
+.menu {
+    list-style: none;
+}
+
+nav {
+    background-color: #b0b1b4;
+    padding: 8px;
+    max-height: 20px;
+    height: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #735050;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .contacts {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .contacts img {
+    width: 40px;
+}
+
+main {
+    min-height: 73vh;
+}
+
+.gift-cards{
+    flex-wrap: nowrap;
+}
