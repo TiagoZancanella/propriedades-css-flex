@@ -11,13 +11,21 @@
     background-color: #e74c3c;
     transform: scale(0.5);/* 50% do tamanho original*/
 }
+
 .scale-hover{
     background-color: #9b59b6;
+    transition: transform 0.5s ease;
 }
 .scale-hover:hover{
-    transform: scale(4.2);
+    transform: scale(4.2) rotate(90deg);
+    background-color: #67307d;
     z-index: 999999;
 }
+.scale-hover:active{
+    background-color: #48175b;
+    transform: scale(4.2) rotate(0deg);
+}
+
 .scale-active{
     background-color: #f39c12;
 }
